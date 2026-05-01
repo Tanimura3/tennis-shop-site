@@ -14,6 +14,12 @@
         <header>
             <div id="menubar">
                 <nav>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
                     <ul class="horizontal-list">
                         <li><a href="#home">ホーム</a></li>
                         <li><a href="#new">お知らせ</a></li>
@@ -73,7 +79,8 @@
                 <div class="promotion-text">
                     <h3 class="promo-title">ヨネックス世界選手権キャンペーン</h3>
                     <p class="promo-badge">購入者プレゼント実施中！</p>
-                    <a href="https://www.yonex.co.jp/tennis/" class="promo-btn" target="_blank" rel="noopener noreferrer">キャンペーンを見る</a>
+                    <a href="https://www.yonex.co.jp/tennis/" class="promo-btn" target="_blank"
+                        rel="noopener noreferrer">キャンペーンを見る</a>
                 </div>
 
                 <div class="promotion-image">
@@ -159,6 +166,14 @@
         </footer>
 
     </div>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const menu = document.querySelector(".horizontal-list");
+
+        hamburger.addEventListener("click", () => {
+            menu.classList.toggle("active");
+        });
+    </script>
 </body>
 
 </html>
