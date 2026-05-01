@@ -299,15 +299,28 @@ footer {
     .horizontal-list,
     .horizontal-list-1 {
         flex-direction: column;
-        text-align: center;
+        align-items: center;
+        gap: 0;
+    }
+
+    .horizontal-list li a,
+    .horizontal-list-1 li a {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+        font-size: 14px;
+    }
+
+    #menubar {
+        position: static;
     }
 
     .fade-in {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
 
     section {
         margin: 20px 10px;
         padding: 25px 15px;
-    } 
+    }
 }
